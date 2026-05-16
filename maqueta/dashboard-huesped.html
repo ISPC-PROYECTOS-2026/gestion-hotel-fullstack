@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Huesped</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+    <header>
+        <nav>
+            <h1>Aires de las Sierras</h1>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Mis Reservas</a></li>
+                <li><a href="#">Cerrar Sesion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+
+        <aside>
+            <h2>Panel Huesped</h2>
+            <ul>
+                <li><a href="#">Reservar Habitacion</a></li>
+                <li><a href="#">Ver Mis Reservas</a></li>
+                <li><a href="#">Cancelar Reserva</a></li>
+            </ul>
+        </aside>
+
+
+        <section>
+
+            <h2>Bienvenido!!!</h2>
+            <p>
+                Desde aca podes gestionar tus reservas y planificar tu estadía
+                en Aires de las Sierras.
+            </p>
+
+
+            <section>
+
+                <article>
+                    <h3>Reservas Activas</h3>
+                    <p>1 reserva en curso</p>
+                </article>
+
+                <article>
+                    <h3>Proximo Check-In</h3>
+                    <p>20/05/2026</p>
+                </article>
+
+                <article>
+                    <h3>Proximo Check-Out</h3>
+                    <p>25/05/2026</p>
+                </article>
+
+            </section>
+
+            
+            <section>
+                <h2>Mis Reservas</h2>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Habitacion</th>
+                            <th>Tipo</th>
+                            <th>Ingreso</th>
+                            <th>Salida</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>101</td>
+                            <td>Suite Deluxe</td>
+                            <td>20/05/2026</td>
+                            <td>25/05/2026</td>
+                            <td>Confirmada</td>
+                        </tr>
+                        <tr>
+                            <td>203</td>
+                            <td>Standard</td>
+                            <td>10/03/2026</td>
+                            <td>12/03/2026</td>
+                            <td>Finalizada</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+
+            <section>
+                <h2>Reservar Habitación</h2>
+
+                <form>
+
+                    <label for="tipo-habitacion">Tipo de habitacion</label>
+                    <select id="tipo-habitacion">
+                        <option value="">Selecciona una opcion</option>
+                        <option value="standard">Standard</option>
+                        <option value="superior">Suite Superior</option>
+                        <option value="deluxe">Suite Deluxe</option>
+                    </select>
+
+                    <br>
+                    <br>
+
+                    <label for="fecha-ingreso">Fecha de ingreso</label>
+                    <input type="date" id="fecha-ingreso">
+
+                    <br>
+                    <br>
+
+                    <label for="fecha-salida">Fecha de salida</label>
+                    <input type="date" id="fecha-salida">
+
+                    <br>
+                    <br>
+
+                    <button type="submit">Confirmar Reserva</button>
+
+                </form>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 Aires de las Sierras</p>
+    </footer>
+
+</body>
+</html>
