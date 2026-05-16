@@ -1,0 +1,118 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color:  #383b28;
+    background-color: #e8e1d8 ;
+}
+
+
+/* header y nav */
+
+header {
+    background-color: #383b28 ;
+    padding: 16px;
+}
+
+header h1 {
+    color:  #e8e1d8 ;
+}
+
+nav ul {
+    list-style: none; 
+    display: flex;
+    gap: 20px;
+
+}
+
+nav ul a {
+    color:  #e8e1d8;
+    text-decoration: none;
+}
+
+
+
+/* main y secciones */
+
+main {
+    padding: 24px;
+}
+
+section {
+    margin-bottom: 24px;
+}
+
+section h2 {
+    margin-bottom: 12px;
+}
+
+section p {
+    margin-bottom: 12px;
+}
+
+
+/*tablas*/
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 12px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #545c38;
+}
+
+th {
+    background-color:  #545c38 ;
+    color:  #f1eee9;
+}
+
+
+/*formularios*/
+
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 4px;
+}
+
+input, select {
+    padding: 8px;
+    border: 1px solid #545c38;
+}
+
+select {
+    background-color: #545c38;
+    color: #f1eee9;
+}
+
+option{
+    background-color:  #f1eee9;
+    color: #545c38;
+}
+
+input[type="date"]{
+    background-color: #545c38;
+    color: #f1eee9;
+}
+
+button {
+    margin-top: 16px;
+    padding: 10px 20px;
+    background-color: #545c38;
+    color: #f1eee9;
+    border: none;
+}
+
+/*footer*/
+
+footer {
+    background-color: #383b28 ;
+    color:  #e8e1d8;
+    text-align: center;
+    padding: 16px;
+}
