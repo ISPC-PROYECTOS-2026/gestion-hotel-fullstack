@@ -2,7 +2,7 @@
 
 ## Introduccion
 
-Aires de las Sierrar es una aplicacion web diseñada para centralizar y simplificar servicios en hoteles pequeños y medianos.
+Aires de las Sierras es una aplicacion web diseñada para centralizar y simplificar servicios en hoteles pequeños y medianos.
 
 Actualmente muchos hoteles manejan sus reservas de forma manual, lo que genera errores, perdida de informacion y dificultades para tomar decisiones. Este sistema busca resolver esa problematica ofreciendo una plataforma unificada que mejora la organizacion interna y la experiencia tanto del personal como del huesped.
 
@@ -15,11 +15,13 @@ Actualmente muchos hoteles manejan sus reservas de forma manual, lo que genera e
 - Asignacion de roles (Administrador, Recepcionista, Huesped)
 - Visualizacion del estado de habitaciones
 - Acceso a estadisticas y metricas de ocupacion
+
 ### Recepcionista
 - Registro de huespedes
 - Gestion de reservas presenciales
 - Registro de Check-In y Check-Out
-###Huesped
+
+### Huesped
 - Reserva de habitaciones
 - Visualizacion de reservas activas e historial
 - Cancelacion de reservas
@@ -27,7 +29,7 @@ Actualmente muchos hoteles manejan sus reservas de forma manual, lo que genera e
 
 ## Instalacion y ejecucion de la maqueta
 
-Por ahora es solo una maqueta desarollada unicamente con HTML5 y CSS por lo que no requiere instalacion
+Por ahora es solo una maqueta desarrollada unicamente con HTML5 y CSS por lo que no requiere instalacion
 
 1. Clonar el repositorio:
 
@@ -46,4 +48,5 @@ cd gestion-hotel-fullstack
 ### Apellido y Nombre
 
 Valdivia, Jesica Paola | GitHub: @jesivaldi
+
 Moreno, Facundo Sebastián | GitHub: @fsm9999
