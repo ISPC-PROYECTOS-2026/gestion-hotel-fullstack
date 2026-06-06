@@ -12,7 +12,7 @@
         <nav>
             <h1>Aires de las Sierras</h1>
             <ul>
-                <li><a href="#">Inicio</a></li>
+                <li><a href="dashboard-huesped.html">Inicio</a></li>
                 <li><a href="#">Cerrar Sesion</a></li>
             </ul>
         </nav>
@@ -29,6 +29,8 @@
             </ul>
         </aside>
 
+        <div>
+
         <section>
             <h2>Bienvenido!!!</h2>
             <p>
@@ -37,147 +39,93 @@
             </p>
         </section>
 
-        <section id="mis-reservas">
-            <h2>Mis Reservas</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Num.Reserva</th>
-                        <th>Habitacion</th>
-                        <th>Tipo</th>
-                        <th>Ingreso</th>
-                        <th>Salida</th>
-                        <th>Estado</th>
-                        <th>Accion</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>#0123</td>
-                        <td>101</td>
-                        <td>Suite</td>
-                        <td>10/06/2026</td>
-                        <td>14/06/2026</td>
-                        <td>Confirmada</td>
-                        <td><a href="#cancelar">Cancelar</a></td>
-                    </tr>
-                    <tr>
-                        <td>#0124</td>
-                        <td>101</td>
-                        <td>Suite</td>
-                        <td>10/06/2026</td>
-                        <td>14/06/2026</td>
-                        <td>Finalizada</td>
-                        <td>-</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
 
-        <section id="reservar">
-            <h2>Consultar disponibilidad</h2>
-            <p>Ingresa las fechas y el tipo de habitacion para verificar disponibilidad</p>
-            <form>
-                <label for="fecha-ingreso">Fecha de ingreso</label>
-                <input type="date" id="fecha-ingreso" name="fecha-ingreso">
+            <section>
+                <h2>Bienvenido!!!</h2>
+                <p>Desde aca podes gestionar tus reservas y planificar tu estadía en Aires de las Sierras.</p>
+            </section>
 
-                <label for="fecha-salida">Fecha de salida</label>
-                <input type="date" id="fecha-salida" name="fecha-salida">
+            <section id="mis-reservas">
+                <h2>Mis Reservas</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Num.Reserva</th>
+                            <th>Habitacion</th>
+                            <th>Tipo</th>
+                            <th>Ingreso</th>
+                            <th>Salida</th>
+                            <th>Estado</th>
+                            <th>Accion</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#0123</td>
+                            <td>101</td>
+                            <td>Suite</td>
+                            <td>10/06/2026</td>
+                            <td>14/06/2026</td>
+                            <td>Confirmada</td>
+                            <td><a href="#cancelar">Cancelar</a></td>
+                        </tr>
+                        <tr>
+                            <td>#0124</td>
+                            <td>104</td>
+                            <td>Standard</td>
+                            <td>2/06/2026</td>
+                            <td>4/06/2026</td>
+                            <td>Finalizada</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
 
-                <label for="tipo-habitacion">Tipo de habitación</label>
-                <select id="tipo-habitacion" name="tipo-habitacion">
-                    <option value="">Seleccioná una opción</option>
-                    <option value="standard">Standard</option>
-                    <option value="superior">Suite Superior</option>
-                    <option value="deluxe">Suite Deluxe</option>
-                </select>
-                <button type="submit">Consultar disponibilidad</button>
-            </form>
-        </section>
+            <section id="reservar">
+                <h2>Consultar disponibilidad</h2>
+                <p>Ingresa las fechas y el tipo de habitacion para verificar disponibilidad</p>
+                <form>
+                    <label for="fecha-ingreso">Fecha de ingreso</label>
+                    <input type="date" id="fecha-ingreso" name="fecha-ingreso">
 
-        <section>
-            <h2>Reservar Habitación</h2>
-            <p>Habitaciones disponibles para las fechas seleccionadas:</p>
+                    <label for="fecha-salida">Fecha de salida</label>
+                    <input type="date" id="fecha-salida" name="fecha-salida">
 
-            <div class="habitaciones-disponibles">
-                <article class="tarjeta-habitacion">
-                    <h3>Habitación 101</h3>
-                    <p>Suite Deluxe — Vista panorámica, jacuzzi privado y desayuno incluido.</p>
-                    <p>$300000 / noche</p>
-                    <a href="#resumen">Seleccionar</a>
-                </article>
-                <article class="tarjeta-habitacion">
-                    <h3>Habitación 205</h3>
-                    <p>Suite Superior — Diseño moderno con todas las comodidades.</p>
-                    <p>$200000 / noche</p>
-                    <a href="#resumen">Seleccionar</a>
-                </article>
-                <article class="tarjeta-habitacion">
-                    <h3>Habitación 310</h3>
-                    <p>Standard — Ideal para disfrutar con comodidad y tranquilidad.</p>
-                    <p>$100000 / noche</p>
-                    <a href="#resumen">Seleccionar</a>
-                </article>
-                
-            </div>
-        </section>
+                    <label for="tipo-habitacion">Tipo de habitación</label>
+                    <select id="tipo-habitacion" name="tipo-habitacion">
+                        <option value="">Seleccioná una opción</option>
+                        <option value="standard">Standard</option>
+                        <option value="superior">Doble</option>
+                        <option value="deluxe">Suite</option>
+                    </select>
+                    <a href="habitaciones-disponibles.html">Ver Habitaciones Disponibles</a>
+                </form>
+            </section>
 
-        <section id="resumen">
-            <h2>Confirma la reserva</h2>
-            <p>Revisa los detalles antes de confirmar</p>
 
-            <dl>
-                <dt>Habitación:</dt>
-                <dd>101 — Suite Deluxe</dd>
+            <section id="cancelar">
+                <h2>Cancelar Reserva</h2>
+                <p>Completá el formulario para solicitar la cancelación de una reserva activa.</p>
+                <form>
+                    <label for="numero-reserva">
+                        Número de reserva
+                    </label>
+                    <input type="text" id="numero-reserva" name="numero-reserva" placeholder="Ej: #00125">
 
-                <dt>Fecha de ingreso:</dt>
-                <dd>17/06/2026</dd>
-
-                <dt>Fecha de salida:</dt>
-                <dd>20/06/2026</dd>
-
-                <dt>Cantidad de noches:</dt>
-                <dd>3</dd>
-
-                <dt>Total estimado:</dt>
-                <dd>$900000</dd>
-            </dl>
-            <form>
-                <button type="submit">Confirmar reserva</button>
-            </form>
-        </section>
-
-        <section>
-            <h2>Reserva confirmada</h2>
-            <div class="confirmada">
-                <h3>¡Tu reserva fue registrada con exito!</h3>
-                <p>Numero de confirmacion: #00125</p>
-            </div>
-        </section>
-
-        <section id="cancelar">
-            <h2>Cancelar Reserva</h2>
-            <p>Completá el formulario para solicitar la cancelación de una reserva activa.</p>
-    
-            <form>
-                <label>
-                    Número de reserva
-                    <input type="text" id="numero-reserva" placeholder="Ej: #00125">
-                </label>
-
-                <label>
-                    Motivo de cancelación
-                    <select id="motivo-cancelacion"  name="motivo_cancelacion">
+                    <label for="motivo-cancelacion">
+                        Motivo de cancelación
+                    </label>
+                    <select id="motivo-cancelacion" name="motivo-cancelacion">
                         <option value="">Seleccioná un motivo</option>
                         <option value="cambio-planes">Cambio de planes</option>
                         <option value="emergencia">Emergencia personal</option>
                         <option value="otro">Otro</option>
                     </select>
-                </label>
-
-                <button type="submit">Solicitar Cancelación</button>
-            </form>
-        </section>
+                    <button type="submit">Solicitar Cancelación</button>
+                </form>
+            </section>
+        </div>
     </main>
 
     <footer>
