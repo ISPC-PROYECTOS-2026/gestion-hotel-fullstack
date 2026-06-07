@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aires de las Sierras</title>
 
+    <link rel="stylesheet" href="../bootstrap-5.3.8-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -14,20 +15,60 @@
     
     <header>
 
-        
-        <nav>
+        <h1 class="visually-hidden">Aires de las Sierras</h1>
 
-            <h1>Aires de las Sierras</h1>
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
 
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Habitaciones</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Quiénes Somos</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Registro</a></li>
-            </ul>
+                <a class="navbar-brand" href="index.html">
+                    Aires de las Sierras
+                </a>
 
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#menuNav"
+                        aria-controls="menuNav"
+                        aria-expanded="false"
+                        aria-label="Abrir menú de navegación">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuNav">
+
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Habitaciones</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Servicios</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="quienes-somos.html">Quiénes Somos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="registro.html">Registro</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
         </nav>
 
     </header>
@@ -51,31 +92,33 @@
         <!-- HABITACIONES -->
         <section>
             <h2>Nuestras Habitaciones</h2>
+
             <div>
                 <img src="img/habitaciones.png" alt="Habitación del hotel">
             </div>
 
-            <div>
-                <h3>Habitación Standard</h3>
-                <p>
-                    Ideal para disfrutar en familia con máxima comodidad.
-                </p>
-            </div>
+            <div class="tarjetas">
+                <div>
+                    <h3>Habitación Standard</h3>
+                    <p>
+                        Ideal para disfrutar en familia con máxima comodidad.
+                    </p>
+                </div>
 
-            <div>
-                <h3>Suite Superior</h3>
-                <p>
-                    Diseño moderno, jacuzzi privado y desayuno incluido.
-                </p>
-            </div>
+                <div>
+                    <h3>Suite Superior</h3>
+                    <p>
+                        Diseño moderno, jacuzzi privado y desayuno incluido.
+                    </p>
+                </div>
 
-            <div>
-                <h3>Suite Deluxe</h3>
-                <p>
-                    Espacios amplios con vista panorámica y todas las comodidades.
-                </p>
+                <div>
+                    <h3>Suite Deluxe</h3>
+                    <p>
+                        Espacios amplios con vista panorámica y todas las comodidades.
+                    </p>
+                </div>
             </div>
-
         </section>
 
         <!-- SERVICIOS -->
@@ -102,21 +145,22 @@
         <section>
             <h2>Opiniones de nuestros huéspedes</h2>
 
-            <article>
-                <p>
-                    "Excelente atención y un lugar increíble para descansar."
-                </p>
-                <h3>María González</h3>
-            </article>
+            <div class="tarjetas">
+                <div>
+                    <p>
+                        "Excelente atención y un lugar increíble para descansar."
+                    </p>
+                    <h3>María González</h3>
+                </div>
 
-            <article>
-                <p>
-                    "Las habitaciones son hermosas y el paisaje espectacular."
-                </p>
-                <h3>Lucas Fernández</h3>
-            </article>
+                <div>
+                    <p>
+                        "Las habitaciones son hermosas y el paisaje espectacular."
+                    </p>
+                    <h3>Lucas Fernández</h3>
+                </div>
+            </div>
         </section>
-
     </main>
 
     <!-- FOOTER -->
@@ -128,6 +172,7 @@
 
     </footer>
 
+    <script src="../bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
