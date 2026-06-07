@@ -3,56 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard Huesped</title>
+    <title>Dashboard Huesped - Aires de las Sierras</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.8-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
     <header>
-        <nav>
-            <h1>Aires de las Sierras</h1>
-            <ul>
-                <li><a href="dashboard-huesped.html">Inicio</a></li>
-                <li><a href="#">Cerrar Sesion</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="#">Aires de las Sierras</a>
+
+                <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#menuNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="dashboard-huesped.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#reservar">Reservar Habitacion</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#mis-reservas">Mis Reservas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#cancelar">Cancelar Reserva</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Cerrar Sesion</a></li>
+                    </ul>
+                </div>
+
+            </div>
         </nav>
     </header>
 
-    <main>
 
-        <aside>
-            <h2>Panel Huesped</h2>
-            <ul>
-                <li><a href="#reservar">Reservar Habitacion</a></li>
-                <li><a href="#mis-reservas">Ver Mis Reservas</a></li>
-                <li><a href="#cancelar">Cancelar Reserva</a></li>
-            </ul>
-        </aside>
-
-        <div>
+    <main class="container py-4">
 
         <section>
-<<<<<<< Updated upstream
-            <h2>Bienvenido!!!</h2>
-            <p>
-                Desde aca podes gestionar tus reservas y planificar tu estadía
-                en Aires de las Sierras.
-            </p>
-=======
-            <h1>Bienvenido!</h1>
+            <h2>Bienvenido!</h2>
             <p>Desde aca podes gestionar tus reservas y planificar tu estadía en Aires de las Sierras.</p>
->>>>>>> Stashed changes
         </section>
 
+        <section id="mis-reservas">
+            <h2>Mis Reservas</h2>
 
-            <section>
-                <h2>Bienvenido!!!</h2>
-                <p>Desde aca podes gestionar tus reservas y planificar tu estadía en Aires de las Sierras.</p>
-            </section>
-
-            <section id="mis-reservas">
-                <h2>Mis Reservas</h2>
-                <table>
+            <div class="table-responsive">
+                <table class="table table-bordered tabla-reservas">
                     <thead>
                         <tr>
                             <th>Num.Reserva</th>
@@ -78,64 +72,92 @@
                             <td>#0124</td>
                             <td>104</td>
                             <td>Standard</td>
-                            <td>2/06/2026</td>
-                            <td>4/06/2026</td>
+                            <td>02/06/2026</td>
+                            <td>04/06/2026</td>
                             <td>Finalizada</td>
                             <td>-</td>
                         </tr>
                     </tbody>
                 </table>
-            </section>
-
-            <section id="reservar">
-                <h2>Consultar disponibilidad</h2>
-                <p>Ingresa las fechas y el tipo de habitacion para verificar disponibilidad</p>
-                <form>
-                    <label for="fecha-ingreso">Fecha de ingreso</label>
-                    <input type="date" id="fecha-ingreso" name="fecha-ingreso">
-
-                    <label for="fecha-salida">Fecha de salida</label>
-                    <input type="date" id="fecha-salida" name="fecha-salida">
-
-                    <label for="tipo-habitacion">Tipo de habitación</label>
-                    <select id="tipo-habitacion" name="tipo-habitacion">
-                        <option value="">Seleccioná una opción</option>
-                        <option value="standard">Standard</option>
-                        <option value="superior">Doble</option>
-                        <option value="deluxe">Suite</option>
-                    </select>
-                    <a href="habitaciones-disponibles.html">Ver Habitaciones Disponibles</a>
-                </form>
-            </section>
+            </div>
+        </section>
 
 
-            <section id="cancelar">
-                <h2>Cancelar Reserva</h2>
-                <p>Completá el formulario para solicitar la cancelación de una reserva activa.</p>
-                <form>
-                    <label for="numero-reserva">
-                        Número de reserva
-                    </label>
-                    <input type="text" id="numero-reserva" name="numero-reserva" placeholder="Ej: #00125">
+        <section id="reservar">
+            <h2>Consultar disponibilidad</h2>
+            <p>Ingresa las fechas y el tipo de habitacion para verificar disponibilidad</p>
 
-                    <label for="motivo-cancelacion">
-                        Motivo de cancelación
-                    </label>
-                    <select id="motivo-cancelacion" name="motivo-cancelacion">
-                        <option value="">Seleccioná un motivo</option>
-                        <option value="cambio-planes">Cambio de planes</option>
-                        <option value="emergencia">Emergencia personal</option>
-                        <option value="otro">Otro</option>
-                    </select>
-                    <button type="submit">Solicitar Cancelación</button>
-                </form>
-            </section>
-        </div>
+            <form>
+                <div class="row g-3 align-items-end">
+
+                    <div class="col-6 col-md-3">
+                        <label for="fecha-ingreso" class="form-label">Fecha de ingreso</label>
+                        <input type="date" id="fecha-ingreso" name="fecha-ingreso" class="form-control">
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <label for="fecha-salida" class="form-label">Fecha de salida</label>
+                        <input type="date" id="fecha-salida" name="fecha-salida" class="form-control">
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <label for="tipo-habitacion" class="form-label">Tipo de habitacion</label>
+                        <select id="tipo-habitacion" name="tipo-habitacion" class="form-select">
+                            <option value="">Selecciona una opcion</option>
+                            <option value="standard">Standard</option>
+                            <option value="superior">Superior</option>
+                            <option value="deluxe">Suite</option>
+                        </select>
+                    </div>
+
+                    <div class="col-6 col-md-3 text-end">
+                        <a href="habitaciones-disponibles.html" class="btn btn-principal">Ver disponibilidad</a>
+                    </div>
+
+                </div>
+            </form>
+        </section>
+
+
+        <section id="cancelar">
+            <h2>Cancelar Reserva</h2>
+            <p>Completa el formulario para solicitar la cancelacion de una reserva activa.</p>
+
+            <form>
+                <div class="row g-3 align-items-end">
+
+                    <div class="col-6 col-md-4">
+                        <label for="numero-reserva" class="form-label">Numero de reserva</label>
+                        <input type="text" id="numero-reserva" name="numero-reserva"
+                               class="form-control" placeholder="Ej: #00125">
+                    </div>
+
+                    <div class="col-6 col-md-4">
+                        <label for="motivo-cancelacion" class="form-label">Motivo de cancelacion</label>
+                        <select id="motivo-cancelacion" name="motivo-cancelacion" class="form-select">
+                            <option value="">Selecciona un motivo</option>
+                            <option value="cambio-planes">Cambio de planes</option>
+                            <option value="emergencia">Emergencia personal</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="col-6 col-md-4 text-end">
+                        <button type="submit" class="btn btn-principal">Solicitar Cancelacion</button>
+                    </div>
+
+                </div>
+            </form>
+        </section>
+
     </main>
 
     <footer>
         <p>© 2026 Aires de las Sierras</p>
     </footer>
+
+    <!-- Enlace al script de javascript para que funcione el boton de haburguesa -->
+    <script src="../bootstrap-5.3.8-dist/js/bootstrap.bundle.js"></script>
 
 </body>
 </html>
