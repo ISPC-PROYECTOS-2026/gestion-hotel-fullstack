@@ -4,61 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Confirmar Reserva - Aires de las Sierras</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.8-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <header>
-        <nav>
-            <h1>Aires de las Sierras</h1>
-            <ul>
-                <li><a href="dashboard-huesped.html">Inicio</a></li>
-                <li><a href="#">Cerrar Sesion</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+    
+                <a class="navbar-brand" href="dashboard.html">Aires de las Sierras</a>
+    
+                <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#menuNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="menuNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="dashboard-huesped.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="dashboard-huesped.html#reservar">Reservar Habitacion</a></li>
+                        <li class="nav-item"><a class="nav-link" href="dashboard-huesped.html#mis-reservas">Mis Reservas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="dashboard-huesped.html#cancelar">Cancelar Reserva</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Cerrar Sesion</a></li>
+                    </ul>
+                </div>
+    
+            </div>
         </nav>
     </header>
 
     <main>
-        <div>
-
-            <section id="resumen">
-                <h2>Confirma la reserva</h2>
-                <p>Revisa los detalles antes de confirmar</p>
-
-                <dl>
-                    <dt>Habitación:</dt>
-                    <dd>101 — Suite Deluxe</dd>
-
-                    <dt>Fecha de ingreso:</dt>
-                    <dd>17/06/2026</dd>
-
-                    <dt>Fecha de salida:</dt>
-                    <dd>20/06/2026</dd>
-
-                    <dt>Cantidad de noches:</dt>
-                    <dd>3</dd>
-
-                    <dt>Total estimado:</dt>
-                    <dd>$900000</dd>
-                </dl>
-                    <button type="button">Confirmar reserva</button>
-
-                <p><a href="habitaciones-disponibles.html">Volver a las habitaciones</a></p>
-            </section>
-
-            <section>
-                <h2>Reserva confirmada</h2>
-                <div>
+        
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-3">
+ 
+                <section id="resumen" class="mb-5">
+                    <h1>Confirma la reserva</h1>
+                    <p>Revisa los detalles antes de confirmar</p>
+ 
+                    <dl>
+                        <dt>Habitacion:</dt>
+                        <dd>101 — Suite Deluxe</dd>
+ 
+                        <dt>Fecha de ingreso:</dt>
+                        <dd>17/06/2026</dd>
+ 
+                        <dt>Fecha de salida:</dt>
+                        <dd>20/06/2026</dd>
+ 
+                        <dt>Cantidad de noches:</dt>
+                        <dd>3</dd>
+ 
+                        <dt>Total estimado:</dt>
+                        <dd>$567000</dd>
+                    </dl>
+ 
+                    <a href="#confirmada" class="btn btn-principal">Confirmar reserva</a>
+                    <p class="mt-3"><a href="habitaciones-disponibles.html">Volver a las habitaciones</a></p>
+                </section>
+ 
+                <section id="confirmada">
+                    <h2>Reserva confirmada</h2>
                     <h3>¡Tu reserva fue registrada con exito!</h3>
                     <p>Numero de confirmacion: #00125</p>
                     <p><a href="dashboard-huesped.html#mis-reservas">Ver mis reservas</a></p>
-                </div>
-            </section>
-
+                </section>
+            </div>
         </div>
-
     </main>
-
+    
+    <script src="../bootstrap-5.3.8-dist/js/bootstrap.bundle.js"></script>
     <footer>
         <p>© 2026 Aires de las Sierras</p>
     </footer>
