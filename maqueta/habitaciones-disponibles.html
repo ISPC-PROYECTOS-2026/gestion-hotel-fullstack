@@ -4,70 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Habitaciones Disponibles - Aires de las Sierras</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.8-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
 
-    <header>
-        <nav>
-            <h1>Aires de las Sierras</h1>
-            <ul>
-                <li><a href="dashboard-huesped.html">Inicio</a></li>
-                <li><a href="#">Cerrar Sesion</a></li>
-            </ul>
-        </nav>
-    </header>
+            <a class="navbar-brand" href="dashboard.html">Aires de las Sierras</a>
 
-    <main>
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menuNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <aside>
-            <h2>Panel Huesped</h2>
-            <ul>
-                <li><a href="dashboard-huesped.html#reservar">Reservar Habitacion</a></li>
-                <li><a href="dashboard-huesped.html#mis-reserva">Ver Mis Reservas</a></li>
-                <li><a href="dashboard-huesped.html#cancelar">Cancelar Reserva</a></li>
-            </ul>
-        </aside>
+            <div class="collapse navbar-collapse" id="menuNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="dashboard-huesped.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dashboard-huesped.html#reservar">Reservar Habitacion</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dashboard-huesped.html#mis-reservas">Mis Reservas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dashboard-huesped.html#cancelar">Cancelar Reserva</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Cerrar Sesion</a></li>
+                </ul>
+            </div>
 
-
-        <div>
-
-            <section>
-                <h2>Habitaciones disponibles</h2>
-                <p>Habitaciones disponibles para las fechas seleccionadas:</p>
-
-                <div class="habitaciones-disponibles">
-
-                    <article class="tarjeta-habitacion">
-                        <h3>Habitación 101</h3>
-                        <p>Suite Deluxe — Vista panorámica, jacuzzi privado y desayuno incluido.</p>
-                        <p>$300000 / noche</p>
-                        <a href="confirmar-reserva.html">Seleccionar</a>
-                    </article>
-
-                    <article class="tarjeta-habitacion">
-                        <h3>Habitación 205</h3>
-                        <p>Suite Superior — Diseño moderno con todas las comodidades.</p>
-                        <p>$200000 / noche</p>
-                        <a href="confirmar-reserva.html">Seleccionar</a>
-                    </article>
-
-                    <article class="tarjeta-habitacion">
-                        <h3>Habitación 310</h3>
-                        <p>Standard — Ideal para disfrutar con comodidad y tranquilidad.</p>
-                        <p>$100000 / noche</p>
-                        <a href="confirmar-reserva.html">Seleccionar</a>
-                    </article>
-                <div>
-                <p><a href="dashboard-huesped.html">Volver a buscar</a></p>
-            </section>
         </div>
-    </main>    
+    </nav>
+
+
+    <main class="container py-4">
+
+        <section>
+            <h2>Habitaciones disponibles</h2>
+            <p>Habitaciones disponibles para las fechas seleccionadas:</p>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/Suite.jpeg" class="card-img-top" alt="Habitacion 101">
+                        <div class="card-body">
+                            <h3 class="card-title">Habitacion 101</h3>
+                            <p class="card-text">Suite Deluxe — Vista panoramica, jacuzzi privado y desayuno incluido.</p>
+                            <p class="card-text precio">$189.000 / noche</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="confirmar-reserva.html" class="btn btn-principal w-100">Seleccionar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/Doble.jpeg" class="card-img-top" alt="Habitacion 205">
+                        <div class="card-body">
+                            <h3 class="card-title">Habitacion 205</h3>
+                            <p class="card-text">Suite Superior — Diseno moderno con todas las comodidades.</p>
+                            <p class="card-text precio">$100.000 / noche</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="confirmar-reserva.html" class="btn btn-principal w-100">Seleccionar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/Standar.jpeg" class="card-img-top" alt="Habitacion 310">
+                        <div class="card-body">
+                            <h3 class="card-title">Habitacion 310</h3>
+                            <p class="card-text">Standard — Ideal para disfrutar con comodidad y tranquilidad.</p>
+                            <p class="card-text precio">$65.000 / noche</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="confirmar-reserva.html" class="btn btn-principal w-100">Seleccionar</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <p class="mt-4"><a href="dashboard-huesped.html#reservar">Volver a buscar</a></p>
+        </section>
+
+    </main>
+
 
     <footer>
         <p>© 2026 Aires de las Sierras</p>
     </footer>
+
+    <script src="../bootstrap-5.3.8-dist/js/bootstrap.bundle.js"></script>
 
 </body>
 </html>
