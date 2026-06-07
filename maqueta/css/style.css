@@ -20,10 +20,8 @@ header h1 {
 }
 
 nav ul {
-    list-style: none; 
-    display: flex;
-    gap: 20px;
-
+    list-style: none;
+    padding-left: 0;
 }
 
 nav ul a {
@@ -117,3 +115,50 @@ footer {
     padding: 16px;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.tarjetas {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.tarjetas div {
+    flex: 1 1 220px;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    main {
+        padding: 16px;
+    }
+
+    .tarjetas {
+        flex-direction: column;
+    }
+}
