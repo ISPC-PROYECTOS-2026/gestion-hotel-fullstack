@@ -162,3 +162,32 @@ img {
         flex-direction: column;
     }
 }
+
+
+/* Formularios responsive */
+
+.formulario-contenedor {
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario input,
+.formulario button {
+    width: 100%;
+}
+
+.formulario input {
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .formulario-contenedor {
+        max-width: 100%;
+    }
+}
