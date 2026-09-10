@@ -8,156 +8,112 @@
 
     <link rel="stylesheet" href="../bootstrap-5.3.8-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/png" href="img/Favicon-Aires-de-las-Sierras.png">
 </head>
 
 <body>
 
-    
+
     <header>
-
-        <h1 class="visually-hidden">Aires de las Sierras</h1>
-
         <nav class="navbar navbar-expand-md">
             <div class="container-fluid">
 
                 <a class="navbar-brand" href="index.html">
-                    Aires de las Sierras
+                    <img src="img/Isotipo-Aire-de-las-Sierras-Verde.png" alt="Isotipo de la pagina" class="logo-iso">
+                    <img src="img/Logotipo-Aires-de-las-Cierras-Verde.png" alt="Logotipo de la pagina" class="logo-txt">
                 </a>
 
-                <button class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#menuNav"
-                        aria-controls="menuNav"
-                        aria-expanded="false"
-                        aria-label="Abrir menú de navegación">
-
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav"
+                    aria-controls="menuNav" aria-expanded="false" aria-label="Abrir menú de navegación">
                     <span class="navbar-toggler-icon"></span>
-
                 </button>
 
                 <div class="collapse navbar-collapse" id="menuNav">
-
-                    <ul class="navbar-nav ms-auto">
-
+                    <ul class="navbar-nav ms-auto gap-2">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Inicio</a>
+                            <a class="nav-link" href="index.html">Inicio</a>
                         </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Habitaciones</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Servicios</a>
-                        </li>
-
                         <li class="nav-item">
                             <a class="nav-link" href="quienes-somos.html">Quiénes Somos</a>
                         </li>
-
                         <li class="nav-item">
-                            <a class="nav-link" href="login.html">Login</a>
+                            <a class="btn boton-dos" href="login.html">Login</a>
                         </li>
-
                         <li class="nav-item">
-                            <a class="nav-link" href="registro.html">Registro</a>
+                            <a class="btn boton-uno" href="registro.html">Registro</a>
                         </li>
-
                     </ul>
-
                 </div>
-
             </div>
         </nav>
-
     </header>
 
-    
+
     <main>
 
-        
-        <section>
-            <h2>Bienvenidos a Aires de las Sierras</h2>
-            <div>
-                <img src="img/aires-de-las-sierras.png" alt="Vista del hotel">
-            </div>
-            <p>
-                Viví una experiencia única rodeado de naturaleza,
-                confort y tranquilidad.
-            </p>
-            <a href="#">Reservar Ahora</a>
-        </section>
+        <!-- Hero -->
 
-        <!-- HABITACIONES -->
-        <section>
-            <h2>Nuestras Habitaciones</h2>
-
-            <div>
-                <img src="img/habitaciones.png" alt="Habitación del hotel">
-            </div>
-
-            <div class="tarjetas">
-                <div>
-                    <h3>Habitación Standard</h3>
-                    <p>
-                        Ideal para disfrutar en familia con máxima comodidad.
-                    </p>
-                </div>
-
-                <div>
-                    <h3>Suite Superior</h3>
-                    <p>
-                        Diseño moderno, jacuzzi privado y desayuno incluido.
-                    </p>
-                </div>
-
-                <div>
-                    <h3>Suite Deluxe</h3>
-                    <p>
-                        Espacios amplios con vista panorámica y todas las comodidades.
-                    </p>
-                </div>
+        <section class="hero d-flex align-items-center">
+            <div class="contenedor-hero">
+                <p>NATURALEZA - DESCANSO - CONFORT</p>
+                <h1>Tu refugio
+                    <span class="texto-verde-hero">en las sierras</span>
+                </h1>
+                <p>Disfruta de una experiencia única en un entorno natural,
+                    con la tranquilidad y el confort que mereces.</p>
+                <a class="btn boton-uno btn-lg rounded-pill" href="registro.html">Registrate ahora
+                    <i class="bi bi-arrow-right-circle-fill"></i>
+                </a>
             </div>
         </section>
 
-        <!-- SERVICIOS -->
-        <section>
-            <h2>Servicios</h2>
+        <!-- sobre habitaciones -->
+        <section class="habitaciones-landingpage">
+            <div class="container">
 
-            <ul>
-                <li>WiFi gratuito</li>
-                <li>Piscina climatizada</li>
-                <li>Spa y relax</li>
-                <li>Desayuno incluido</li>
-            </ul>
-        </section>
-
-        <!-- GALERÍA -->
-        <section>
-            <h2>Galería</h2>
-            <div>
-                <img src="img/sala-comun.png" alt="Lobby del hotel">
-            </div>
-        </section>
-
-        <!-- TESTIMONIOS -->
-        <section>
-            <h2>Opiniones de nuestros huéspedes</h2>
-
-            <div class="tarjetas">
-                <div>
-                    <p>
-                        "Excelente atención y un lugar increíble para descansar."
+                <div class="encabezado-habitaciones text-center mt-5">
+                    <p class="texto-verde">- NUESTRAS HABITACIONES -</p>
+                    <h2>Comodidad para cada estadía</h2>
+                    <p class="texto-verde">Descubrí nuestras habitaciones diseñadas para que disfrutesde la naturaleza sin resignar confort.
                     </p>
-                    <h3>María González</h3>
                 </div>
 
-                <div>
-                    <p>
-                        "Las habitaciones son hermosas y el paisaje espectacular."
-                    </p>
-                    <h3>Lucas Fernández</h3>
+                <div class="row g-4">
+                    <div class="col-12 col-md-4">
+
+                        <div class="card h-100">
+                            <img src="img/Suite.jpeg" class="card-img-top" alt="Suite Deluxe">
+
+                            <div class="card-body">
+                                <h3 class="card-title texto-verde">Suite</h3>
+                                <p class="card-text texto-verde">La mejor experiencia, con ambientes amplios y detalles unicos.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100">
+                            <img src="img/Doble.jpeg" class="card-img-top" alt="Habitación Superior">
+
+                            <div class="card-body">
+                                <h3 class="card-title texto-verde">Habitación Superior</h3>
+                                <p class="card-text texto-verde">Mas espacio, mejores vistas y todo el confort que necesitas.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100">
+                            <img src="img/Standar.jpeg" class="card-img-top" alt="Habitación Standard">
+
+                            <div class="card-body">
+                                <h3 class="card-title texto-verde">Habitación Standard</h3>
+                                <p class="card-text texto-verde">Espaciosas y luminosas, ideales para una estadia confortable.</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -165,14 +121,11 @@
 
     <!-- FOOTER -->
     <footer>
-
         <p>© 2026 Aires de las Sierras - Todos los derechos reservados</p>
-
+        <hr>
         <p>Córdoba, Argentina</p>
-
     </footer>
 
     <script src="../bootstrap-5.3.8-dist/js/bootstrap.bundle.js"></script>
 </body>
-
 </html>

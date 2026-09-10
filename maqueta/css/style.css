@@ -1,10 +1,13 @@
 /*Colores*/
 :root {
-    --color-primario: #2c3e2d;
+    --color-primario: #f4f5ee;
     --color-secundario: #4a6741;
     --color-fondo: #f5f3ef;
     --color-texto: #2c2c2c;
-    --color-texto-claro: #f1eee9;
+    --color-texto-claro: #538153;
+    --color-uno: #f4f5ee;
+    --color-dos: #538153;
+    --color-tres: #365736;
 }
 
 
@@ -12,28 +15,65 @@
 body {
     background-color: var(--color-fondo);
     color: var(--color-texto);
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-/*Header y Nav*/
+.texto-verde{
+    color: var(--color-dos);
+}
+
+/* Barra de Navegacion */
 .navbar {
-    background-color: var(--color-primario);
+    background-color: var(--color-uno);
+    padding: 20px;
 }
-
 .navbar-brand, .nav-link {
-    color: var(--color-texto-claro);
+    color: var(--color-dos);
+}
+
+.logo-iso{
+    max-width: 150px;
+}
+
+.logo-txt{
+    max-width: 250px;
+}
+
+/* Seccion Hero */
+
+.hero{
+    min-height: 500px;
+    
+    background-image:         linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0)), url("../img/Imagen\ de\ fondo\ Hero.png");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.contenedor-hero{
+    margin-left: 50px;
+    max-width: 400px;
+    color: var(--color-uno);
+}
+
+.texto-verde-hero{
+    color: var(--color-dos);
+    display: block;
 }
 
 
-/*Secciones*/
-section {
-    margin-bottom: 2.5rem;
+/* footer */
+footer{
+    background-color: var(--color-tres);
+    margin-top:50px;
+    padding: 40px;
+    text-align: center;
+    color: var(--color-uno);
 }
 
-section h2 {
-    color: var(--color-primario);
-    margin-bottom: 1rem;
 
-}
 
 /*Tabla*/
 .tabla-reservas th {
@@ -59,22 +99,24 @@ section h2 {
     border: none;
 }
 
-/*Footer*/
-footer {
-    background-color: var(--color-primario);
-    color: var(--color-texto-claro);
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
+
+.boton-uno {
+    background-color: var(--color-dos);
+    color: var(--color-uno);
+    border: none;
 }
+
+.boton-dos {
+    background-color: var(--color-uno);
+    color: var(--color-dos);
+    border: var(--color-dos) solid 1px;
+}
+
 
 
 /* Responsive index */
 
-img {
-    max-width: 100%;
-    height: auto;
-}
+
 
 
 .tarjetas {
