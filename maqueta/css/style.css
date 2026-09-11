@@ -8,6 +8,7 @@
     --color-uno: #f4f5ee;
     --color-dos: #538153;
     --color-tres: #365736;
+    --color-cuatro: #dddfdc;
 }
 
 
@@ -88,7 +89,15 @@ footer{
 /*Formularios*/
 .form-label {
     font-weight: bold;
-    color: var(--color-primario);
+    color: var(--color-dos);
+}
+
+.formulario-contenedor {
+    max-width: 400px;
+    margin: 0 auto;
+    border: var(--color-cuatro) solid 2px;
+    border-radius: 30px;
+    padding: 30px;
 }
 
 
@@ -139,15 +148,7 @@ footer{
     }
 }
 
-/* Formularios responsive */
 
-.formulario-contenedor {
-    max-width: 480px;
-    margin: 0 auto;
-}
 
-@media (max-width: 768px) {
-    .formulario-contenedor {
-        max-width: 100%;
-    }
-}
+
+
