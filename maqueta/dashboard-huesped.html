@@ -1,162 +1,168 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard Huesped - Aires de las Sierras</title>
     <link rel="stylesheet" href="../bootstrap-5.3.8-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/png" href="img/FaviconAiresDeLasSierras.png">
 </head>
+
 <body>
+
+
     <header>
         <nav class="navbar navbar-expand-md">
             <div class="container-fluid">
 
-                <a class="navbar-brand" href="#">Aires de las Sierras</a>
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/IsotipoAireDeLasSierrasVerde.png" alt="Isotipo de la pagina" class="logo-iso">
+                    <img src="img/LogotipoAiresDeLasCierrasVerde.png" alt="Logotipo de la pagina" class="logo-txt">
+                </a>
 
-                <button class="navbar-toggler" type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#menuNav">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav"
+                    aria-controls="menuNav" aria-expanded="false" aria-label="Abrir menú de navegación">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="menuNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="dashboard-huesped.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#reservar">Reservar Habitacion</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#mis-reservas">Mis Reservas</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#cancelar">Cancelar Reserva</a></li>
+                    <ul class="navbar-nav ms-auto gap-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="quienes-somos.html">Quiénes Somos</a>
+                        </li>
                         <li class="nav-item"><a class="nav-link" href="#">Cerrar Sesion</a></li>
                     </ul>
                 </div>
-
             </div>
         </nav>
     </header>
 
 
-    <main class="container py-4">
+    <main>
 
-        <section>
-            <h1>Bienvenido!</h1>
+        <section class="seccion-bienvenida container-fluid p-4">
+            <h1>¡Hola Usuario X!</h1>
             <p>Desde aca podes gestionar tus reservas y planificar tu estadía en Aires de las Sierras.</p>
         </section>
 
-        <section id="mis-reservas">
-            <h2>Mis Reservas</h2>
+        <div class="container py-5">
+            <div class="row">
 
-            <div class="table-responsive">
-                <table class="table table-bordered tabla-reservas">
-                    <thead>
-                        <tr>
-                            <th>Num.Reserva</th>
-                            <th>Habitacion</th>
-                            <th>Tipo</th>
-                            <th>Ingreso</th>
-                            <th>Salida</th>
-                            <th>Estado</th>
-                            <th>Accion</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>#0123</td>
-                            <td>101</td>
-                            <td>Suite</td>
-                            <td>10/06/2026</td>
-                            <td>14/06/2026</td>
-                            <td>Confirmada</td>
-                            <td><a href="#cancelar">Cancelar</a></td>
-                        </tr>
-                        <tr>
-                            <td>#0124</td>
-                            <td>104</td>
-                            <td>Standard</td>
-                            <td>02/06/2026</td>
-                            <td>04/06/2026</td>
-                            <td>Finalizada</td>
-                            <td>-</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="col-12 col-md-5">
+                    <!-- Consultar disponibilidad -->
+                    <section id="reservar" class="seccion-dashboard p-3">
+                        <h2 class="texto-verde">Consultar disponibilidad</h2>
+                        <p class="texto-verde">Ingresa las fechas y el tipo de habitacion para verificar disponibilidad</p>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <label for="fecha-ingreso" class="form-label">Fecha de ingreso</label>
+                                    <input type="date" id="fecha-ingreso" name="fecha-ingreso" class="form-control">
+                                </div>
+                                <div class="col-12">
+                                    <label for="fecha-salida" class="form-label">Fecha de salida</label>
+                                    <input type="date" id="fecha-salida" name="fecha-salida" class="form-control">
+                                </div>
+                                <div class="col-12">
+                                    <label for="tipo-habitacion" class="form-label">Tipo de habitacion</label>
+                                    <select id="tipo-habitacion" name="tipo-habitacion" class="form-select">
+                                        <option value="">Selecciona una opcion</option>
+                                        <option value="standard">Standard</option>
+                                        <option value="superior">Superior</option>
+                                        <option value="deluxe">Suite</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <a href="habitaciones-disponibles.html" class="btn boton-uno">Ver
+                                        disponibilidad</a>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+                <!-- reservas -->
+                <div class="col-12 col-md-7 d-flex flex-column gap-3">
+                    <section id="mis-reservas" class="seccion-dashboard p-3">
+                        <h2 class="texto-verde">Mis Reservas</h2>
+                        <div class="table-responsive">
+                            <table class="table table-bordered tabla-reservas">
+                                <thead>
+                                    <tr>
+                                        <th>Num.Reserva</th>
+                                        <th>Habitacion</th>
+                                        <th>Tipo</th>
+                                        <th>Ingreso</th>
+                                        <th>Salida</th>
+                                        <th>Estado</th>
+                                        <th>Accion</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>#0123</td>
+                                        <td>101</td>
+                                        <td>Suite</td>
+                                        <td>10/06/2026</td>
+                                        <td>14/06/2026</td>
+                                        <td>Confirmada</td>
+                                        <td><a href="#cancelar">Cancelar</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#0124</td>
+                                        <td>104</td>
+                                        <td>Standard</td>
+                                        <td>02/06/2026</td>
+                                        <td>04/06/2026</td>
+                                        <td>Finalizada</td>
+                                        <td>-</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                    <!-- cancelar -->
+                    <section id="cancelar" class="seccion-dashboard p-3">
+                        <h2 class="texto-verde">Cancelar Reserva</h2>
+                        <p class="texto-verde">Completa el formulario para solicitar la cancelacion de una reserva activa.</p>
+                        <form>
+                            <div class="row g-3 align-items-end">
+                                <div class="col-6 col-md-4">
+                                    <label for="numero-reserva" class="form-label">Numero de reserva</label>
+                                    <input type="text" id="numero-reserva" name="numero-reserva" class="form-control"
+                                        placeholder="Ej: #00125">
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <label for="motivo-cancelacion" class="form-label">Motivo de cancelacion</label>
+                                    <select id="motivo-cancelacion" name="motivo-cancelacion" class="form-select">
+                                        <option value="">Selecciona un motivo</option>
+                                        <option value="cambio-planes">Cambio de planes</option>
+                                        <option value="emergencia">Emergencia personal</option>
+                                        <option value="otro">Otro</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <button type="submit" class="btn boton-uno">Solicitar Cancelacion</button>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                </div>
             </div>
-        </section>
-
-
-        <section id="reservar">
-            <h2>Consultar disponibilidad</h2>
-            <p>Ingresa las fechas y el tipo de habitacion para verificar disponibilidad</p>
-
-            <form>
-                <div class="row g-3 align-items-end">
-
-                    <div class="col-6 col-md-3">
-                        <label for="fecha-ingreso" class="form-label">Fecha de ingreso</label>
-                        <input type="date" id="fecha-ingreso" name="fecha-ingreso" class="form-control">
-                    </div>
-
-                    <div class="col-6 col-md-3">
-                        <label for="fecha-salida" class="form-label">Fecha de salida</label>
-                        <input type="date" id="fecha-salida" name="fecha-salida" class="form-control">
-                    </div>
-
-                    <div class="col-6 col-md-3">
-                        <label for="tipo-habitacion" class="form-label">Tipo de habitacion</label>
-                        <select id="tipo-habitacion" name="tipo-habitacion" class="form-select">
-                            <option value="">Selecciona una opcion</option>
-                            <option value="standard">Standard</option>
-                            <option value="superior">Superior</option>
-                            <option value="deluxe">Suite</option>
-                        </select>
-                    </div>
-
-                    <div class="col-6 col-md-3 text-end">
-                        <a href="habitaciones-disponibles.html" class="btn btn-principal">Ver disponibilidad</a>
-                    </div>
-
-                </div>
-            </form>
-        </section>
-
-
-        <section id="cancelar">
-            <h2>Cancelar Reserva</h2>
-            <p>Completa el formulario para solicitar la cancelacion de una reserva activa.</p>
-
-            <form>
-                <div class="row g-3 align-items-end">
-
-                    <div class="col-6 col-md-4">
-                        <label for="numero-reserva" class="form-label">Numero de reserva</label>
-                        <input type="text" id="numero-reserva" name="numero-reserva"
-                               class="form-control" placeholder="Ej: #00125">
-                    </div>
-
-                    <div class="col-6 col-md-4">
-                        <label for="motivo-cancelacion" class="form-label">Motivo de cancelacion</label>
-                        <select id="motivo-cancelacion" name="motivo-cancelacion" class="form-select">
-                            <option value="">Selecciona un motivo</option>
-                            <option value="cambio-planes">Cambio de planes</option>
-                            <option value="emergencia">Emergencia personal</option>
-                            <option value="otro">Otro</option>
-                        </select>
-                    </div>
-
-                    <div class="col-6 col-md-4 text-end">
-                        <button type="submit" class="btn btn-principal">Solicitar Cancelacion</button>
-                    </div>
-
-                </div>
-            </form>
-        </section>
-
+        </div>
     </main>
 
     <footer>
-        <p>© 2026 Aires de las Sierras</p>
+        <p>© 2026 Aires de las Sierras - Todos los derechos reservados</p>
+        <hr>
+        <p>Córdoba, Argentina</p>
     </footer>
 
-    <!-- Enlace al script de javascript para que funcione el boton de haburguesa -->
     <script src="../bootstrap-5.3.8-dist/js/bootstrap.bundle.js"></script>
 
 </body>

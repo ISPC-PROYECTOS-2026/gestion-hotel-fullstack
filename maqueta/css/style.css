@@ -16,7 +16,7 @@
 body {
     background-color: var(--color-fondo);
     color: var(--color-texto);
-    min-height: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -76,15 +76,10 @@ footer{
 
 
 
-/*Tabla*/
-.tabla-reservas th {
-    background-color: var(--color-secundario);
-    color: var(--color-texto-claro);
-}
 
-.tabla-reservas a {
-    color: var(--color-secundario);
-}
+
+
+
 
 /*Formularios*/
 .form-label {
@@ -123,6 +118,30 @@ footer{
 
 
 
+
+/* dashboard */
+
+.seccion-bienvenida{
+    color: var(--color-uno);
+    background-color: var(--color-tres);
+}
+
+.seccion-dashboard{
+    border: var(--color-cuatro) solid 3px;
+    border-radius: 20px;
+}
+
+.tabla-reservas th {
+    background-color: var(--color-cuatro);
+    color: var(--color-dos);
+}
+
+.tabla-reservas td {
+    background-color: var(--color-uno);
+    color: var(--color-dos);
+}
+
+
 /* Responsive index */
 
 
@@ -147,7 +166,6 @@ footer{
         flex-direction: column;
     }
 }
-
 
 
 
