@@ -93,7 +93,7 @@ footer{
 }
 
 .formulario-contenedor {
-    max-width: 400px;
+    max-width: 520px;
     margin: 0 auto;
     border: var(--color-cuatro) solid 2px;
     border-radius: 30px;
