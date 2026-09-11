@@ -76,11 +76,6 @@ footer{
 
 
 
-
-
-
-
-
 /*Formularios*/
 .form-label {
     font-weight: bold;
@@ -140,33 +135,3 @@ footer{
     background-color: var(--color-uno);
     color: var(--color-dos);
 }
-
-
-/* Responsive index */
-
-
-
-
-.tarjetas {
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
-}
-
-.tarjetas div {
-    flex: 1 1 220px;
-}
-
-@media (max-width: 768px) {
-    main {
-        padding: 16px;
-    }
-
-    .tarjetas {
-        flex-direction: column;
-    }
-}
-
-
-
-
