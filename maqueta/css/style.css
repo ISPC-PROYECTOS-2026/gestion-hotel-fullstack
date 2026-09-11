@@ -1,10 +1,5 @@
 /*Colores*/
 :root {
-    --color-primario: #f4f5ee;
-    --color-secundario: #4a6741;
-    --color-fondo: #f5f3ef;
-    --color-texto: #2c2c2c;
-    --color-texto-claro: #538153;
     --color-uno: #f4f5ee;
     --color-dos: #538153;
     --color-tres: #365736;
@@ -14,7 +9,7 @@
 
 /*General*/
 body {
-    background-color: var(--color-fondo);
+    background-color: var(--color-uno);
     color: var(--color-texto);
     min-height: 100vh;
     display: flex;
@@ -100,12 +95,6 @@ footer{
 
 
 /*Botones*/
-.btn-principal {
-    background-color: var(--color-secundario);
-    color: var(--color-texto-claro);
-    border: none;
-}
-
 
 .boton-uno {
     background-color: var(--color-dos);
