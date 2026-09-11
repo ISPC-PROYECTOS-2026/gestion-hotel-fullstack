@@ -42,6 +42,14 @@ body {
     max-width: 250px;
 }
 
+
+/* tarjetas */
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
 /* Seccion Hero */
 
 .hero{
