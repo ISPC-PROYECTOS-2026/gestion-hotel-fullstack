@@ -20,6 +20,16 @@ body {
     color: var(--color-dos);
 }
 
+.texto-claro{
+    color: var(--color-uno);
+}
+
+.bordes-section{
+    border: var(--color-cuatro) solid 3px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0px;
+}
 /* Barra de Navegacion */
 .navbar {
     background-color: var(--color-uno);
@@ -36,7 +46,6 @@ body {
 .logo-txt{
     max-width: 250px;
 }
-
 
 /* tarjetas */
 
@@ -67,7 +76,6 @@ body {
     display: block;
 }
 
-
 /* footer */
 footer{
     background-color: var(--color-tres);
@@ -76,8 +84,6 @@ footer{
     text-align: center;
     color: var(--color-uno);
 }
-
-
 
 /*Formularios*/
 .form-label {
@@ -93,7 +99,6 @@ footer{
     padding: 30px;
 }
 
-
 /*Botones*/
 
 .boton-uno {
@@ -107,8 +112,6 @@ footer{
     color: var(--color-dos);
     border: var(--color-dos) solid 1px;
 }
-
-
 
 
 /* dashboard */
@@ -131,4 +134,12 @@ footer{
 .tabla-reservas td {
     background-color: var(--color-uno);
     color: var(--color-dos);
+}
+
+
+/* quienes somos */
+
+.quienes-somos-section{
+    background-color: var(--color-dos);
+    padding: 10px;
 }

@@ -1,99 +1,108 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quienes Somos</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../bootstrap-5.3.8-dist/css/bootstrap.min.css">
 </head>
+
 <body>
 
+
     <header>
-        <nav>
-            <h1>Aire de las Sierras</h1>
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
 
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="#">Habitaciones</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="quienes-somos.html">Quienes Somos</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Registro</a></li>
-            </ul>
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/IsotipoAireDeLasSierrasVerde.png" alt="Isotipo de la pagina" class="logo-iso">
+                    <img src="img/LogotipoAiresDeLasCierrasVerde.png" alt="Logotipo de la pagina" class="logo-txt">
+                </a>
 
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav"
+                    aria-controls="menuNav" aria-expanded="false" aria-label="Abrir menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuNav">
+                    <ul class="navbar-nav ms-auto gap-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="quienes-somos.html">Quiénes Somos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section>
-
-            <div>
-                <h2>Quienes somos</h2>
-                <p>Conoce el proposito detras de Aires de las Sierras y 
-                    el equipo que lo hizo posible </p>
-            </div>
+        <section class="quienes-somos-section texto-claro container-fluid text-center">
+            <h2>Quienes somos</h2>
+            <p>Conoce el proposito detras de Aires de las Sierras y
+                el equipo que lo hizo posible </p>
         </section>
 
         <!--proposito-->
+        <div class="container py-5">
+            <section class="texto-verde bordes-section">
+                <div class="texto-verde">
+                    <h2>Nuestro Proyecto</h2>
 
-        <section>
-            <div>
-                <h2>Nuestro Proyecto</h2>
+                    <h3>¿Que es Aire de las Sierras?</h3>
+                    <p>Aire de las Sierras es un sistema web de gestion hotelera desarrollado
+                        para modernizar la administracion de reservas y servicios en hoteles pequeños
+                        y medianos de la region.
+                    </p>
+                </div>
 
-                <h3>¿Que es Aire de las Sierras?</h3>
-                <p>Aire de las Sierras es un sistema web de gestion hotelera desarrollado
-                para modernizar la administracion de reservas y servicios en hoteles pequeños
-                y medianos de la region.
+                <div class="texto-verde">
+                    <h3>¿Que problema resuelve?</h3>
+                    <p>Muchos hoteles gestionan sus reservas de forma manual, lo que genera errores
+                        y perdida de informacion. Nuestro sistema centraliza todo en un unico lugar, mejorando
+                        la organizacion interna y la experiencia tanto del personal como del huesped.
+                    </p>
+                </div>
+
+                <div class="texto-verde">
+                    <h3>¿Que permite hacer?</h3>
+                    <p>El sistema permite registrar y gestionar reservas de manera eficiente
+                        , administrar usuarios con distintos roles y acceder a metricas de ocupacion
+                        para mejor toma de decisiones.
+                    </p>
+                </div>
+            </section>
+
+            <!--equipo-->
+
+            <section class="texto-verde bordes-section">
+                <h2>El equipo</h2>
+                <p>Somo un grupo de estudiantes del Instituto Superior Politecnico de Cordoba
+                    conformado por:
                 </p>
-            </div>
 
-            <div>
-                <h3>¿Que problema resuelve?</h3>
-                <p>Muchos hoteles gestionan sus reservas de forma manual, lo que genera errores
-                    y perdida de informacion. Nuestro sistema centraliza todo en un unico lugar, mejorando 
-                    la organizacion interna y la experiencia tanto del personal como del huesped.
-                </p>
-            </div>
+                <div class="texto-verde">
+                    <h3>Facundo Sebastian Moreno</h3>
+                    <p>Desarrollador Full Stack</p>
+                    <a href="#">Ver portafolio</a>
+                </div>
 
-            <div>
-                <h3>¿Que permite hacer?</h3>
-                <p>El sistema permite registrar y gestionar reservas de manera eficiente
-                    , administrar usuarios con distintos roles y acceder a metricas de ocupacion
-                    para mejor toma de decisiones.
-                </p>
-            </div>
-        </section>
-        <br>
-
-        <!--equipo-->
-
-        <section>
-            <h2>El equipo</h2>
-            <p>Somo un grupo de estudiantes del Instituto Superior Politecnico de Cordoba
-                conformado por:
-            </p>
-            <div>
-                <h3>Jesica Paola Valdivia</h3>
-                <p>Desarrolladora Full Stack</p>
-                <a href="#">Ver portafolio</a>
-            </div>
-            
-            <div>
-                <h3>Facundo Sebastian Moreno</h3>
-                <p>Desarrollador Full Stack</p>
-                <a href="#">Ver portafolio</a>
-            </div>
-
-        </section>
+            </section>
+        </div>
     </main>
 
-    <br>
 
+    <script src="../bootstrap-5.3.8-dist/js/bootstrap.bundle.js"></script>
     <footer>
         <p>© 2026 Aires de las Sierras - Todos los derechos reservados</p>
+        <hr>
         <p>Córdoba, Argentina</p>
-
     </footer>
-    
+
 </body>
+
 </html>
