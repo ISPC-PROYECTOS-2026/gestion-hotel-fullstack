@@ -1,1 +1,36 @@
-<p>login works!</p>
+    <main>
+
+        <section class="formulario-contenedor">
+            <h1 class="texto-verde">Iniciar Sesión</h1>
+            <p class="texto-verde">Accede a tu cuenta para gestionar tus reservas.</p>
+
+            <form class="row g-3" action="dashboard-huesped.html">
+
+                <div class="col-12">
+                    <label for="email" class="form-label">Email</label>
+                    <div class="input-group">
+                        <span class="input-group-text texto-verde"><i class="bi bi-envelope"></i></span>
+                        <input type="email" id="email" class="form-control" placeholder="correo@gmail.com" required>
+                    </div>
+                    
+                </div>
+
+                <div class="col-12">
+                    <label for="contrasena" class="form-label">Contraseña</label>
+                    <div class="input-group">
+                        <span class="input-group-text texto-verde"><i class="bi bi-lock"></i></span>
+                        <input type="password" id="contrasena" class="form-control" placeholder="Ingresa tu Contraseña" required>
+                    </div>
+                </div>
+                    
+
+                <div class="col-12">
+                    <a routerLink="/dashboard" class="btn boton-uno w-100">Iniciar Sesión</a>
+                </div>
+
+            </form>
+
+            <p class="mt-3 texto-verde">¿No tenes cuenta? <a routerLink="/registro">Registrate aca</a></p>
+        </section>
+
+    </main>
