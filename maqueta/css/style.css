@@ -122,6 +122,8 @@ footer{
 }
 
 .seccion-dashboard{
+    width: 100%;
+    max-width: 800px;
     border: var(--color-cuatro) solid 3px;
     border-radius: 20px;
 }
