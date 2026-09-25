@@ -1,1 +1,39 @@
-<p>confirmar-reserva works!</p>
+<main>
+
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8">
+
+            <section id="resumen" class="mb-5">
+                <h1 class="texto-verde">Confirma la reserva</h1>
+                <p>Revisa los detalles antes de confirmar</p>
+
+                <dl>
+                    <dt>Habitacion:</dt>
+                    <dd>101 — Suite Deluxe</dd>
+
+                    <dt>Fecha de ingreso:</dt>
+                    <dd>17/06/2026</dd>
+
+                    <dt>Fecha de salida:</dt>
+                    <dd>20/06/2026</dd>
+
+                    <dt>Cantidad de noches:</dt>
+                    <dd>3</dd>
+
+                    <dt>Total estimado:</dt>
+                    <dd>$567000</dd>
+                </dl>
+
+                <a href="#confirmada" class="btn boton-uno">Confirmar reserva</a>
+                <p class="mt-3"><a routerLink="/habitaciones-disponibles">Volver a las habitaciones</a></p>
+            </section>
+
+            <section id="confirmada">
+                <h2 class="texto-verde">Reserva confirmada</h2>
+                <h3 class="texto-verde">Tu reserva fue registrada. Quedará pendiente hasta confirmar el pago.</h3>
+                <p>Numero de confirmacion: #00125</p>
+                <p><a routerLink="/dashboard/mis-reservas">Ver mis reservas</a></p>
+            </section>
+        </div>
+    </div>
+</main>
