@@ -8,8 +8,8 @@ import { NotFound } from './pages/not-found/not-found';
 import { Reservar } from './pages/dashboard/reservar/reservar';
 import { MisReservas } from './pages/dashboard/mis-reservas/mis-reservas';
 import { Cancelar } from './pages/dashboard/cancelar/cancelar';
-import { HabitacionesDisponibles } from './pages/dashboard/habitaciones-disponibles/habitaciones-disponibles';
-import { ConfirmarReserva } from './pages/dashboard/confirmar-reserva/confirmar-reserva';
+import { HabitacionesDisponibles } from './pages/habitaciones-disponibles/habitaciones-disponibles';
+import { ConfirmarReserva } from './pages/confirmar-reserva/confirmar-reserva';
 
 export const routes: Routes = [
     {path:"", redirectTo:"/home", pathMatch:"full"},

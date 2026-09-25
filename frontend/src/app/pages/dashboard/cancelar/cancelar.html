@@ -1,1 +1,26 @@
-<p>cancelar works!</p>
+<!-- cancelar -->
+<section id="cancelar" class="seccion-dashboard p-3">
+    <h2 class="texto-verde">Cancelar Reserva</h2>
+    <p class="texto-verde">Completa el formulario para solicitar la cancelacion de una reserva activa.</p>
+    <form>
+        <div class="row g-3 align-items-end">
+            <div class="col-6 col-md-4">
+                <label for="numero-reserva" class="form-label">Numero de reserva</label>
+                <input type="text" id="numero-reserva" name="numero-reserva" class="form-control"
+                    placeholder="Ej: #00125">
+            </div>
+            <div class="col-6 col-md-4">
+                <label for="motivo-cancelacion" class="form-label">Motivo de cancelacion</label>
+                <select id="motivo-cancelacion" name="motivo-cancelacion" class="form-select">
+                    <option value="">Selecciona un motivo</option>
+                    <option value="cambio-planes">Cambio de planes</option>
+                    <option value="emergencia">Emergencia personal</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+            <div class="col-12 col-md-4">
+                <button type="submit" class="btn boton-uno">Solicitar Cancelacion</button>
+            </div>
+        </div>
+    </form>
+</section>

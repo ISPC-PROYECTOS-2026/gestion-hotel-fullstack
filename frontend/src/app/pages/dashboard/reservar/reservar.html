@@ -1,1 +1,30 @@
-<p>reservar works!</p>
+<!-- Consultar disponibilidad -->
+<section id="reservar" class="seccion-dashboard p-3">
+    <h2 class="texto-verde">Consultar disponibilidad</h2>
+    <p class="texto-verde">Ingresa las fechas y el tipo de habitacion para verificar disponibilidad</p>
+    <form>
+        <div class="row g-3">
+            <div class="col-12">
+                <label for="fecha-ingreso" class="form-label">Fecha de ingreso</label>
+                <input type="date" id="fecha-ingreso" name="fecha-ingreso" class="form-control">
+            </div>
+            <div class="col-12">
+                <label for="fecha-salida" class="form-label">Fecha de salida</label>
+                <input type="date" id="fecha-salida" name="fecha-salida" class="form-control">
+            </div>
+            <div class="col-12">
+                <label for="tipo-habitacion" class="form-label">Tipo de habitacion</label>
+                <select id="tipo-habitacion" name="tipo-habitacion" class="form-select">
+                    <option value="">Selecciona una opcion</option>
+                    <option value="standard">Standard</option>
+                    <option value="superior">Superior</option>
+                    <option value="deluxe">Suite</option>
+                </select>
+            </div>
+            <div class="col-12">
+                <a routerLink="/habitaciones-disponibles" class="btn boton-uno">Ver
+                    disponibilidad</a>
+            </div>
+        </div>
+    </form>
+</section>
