@@ -12,9 +12,6 @@
 body {
     background-color: var(--color-uno);
     color: var(--color-texto);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
 .texto-verde{
@@ -153,4 +150,14 @@ footer{
 .quienes-somos-section{
     background-color: var(--color-dos);
     padding: 10px;
+}
+
+/* error 404 */
+
+.error-404{
+    padding: 40px;
+}
+.error-404 h1{
+    color: var(--color-dos);
+    font-size: 70px;
 }
